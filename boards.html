@@ -43,7 +43,7 @@
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                <h5 class="modal-title" id="exampleModalLabel"> Cards </h5>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                 </button>
@@ -51,27 +51,27 @@
                             <div class="modal-body">
                                 <form>
                                     <div class="mb-3">
-                                        <label for="exampleInputEmail1" class="form-label"> Name </label>
-                                        <input type="text" class="form-control" id="exampleInputEmail1">
+                                        <label for="exampleInputTitle" class="form-label"> Title </label>
+                                        <input type="text" class="form-control" id="exampleInputTitle">
                                     </div>
                                     <div class="form-group">
-                                        <label for="exampleFormControlTextarea1">Add your thoughts</label>
-                                        <textarea class="form-control rounded-0" id="exampleFormControlTextarea1" rows="10"></textarea>
-                                      </div>
-                         
-                                    <button type="submit" class="btn btn-primary">Submit</button>
-                                    <button type="button" class="btn cancel" onclick="Close_Item()">Close</button>
+                                        <label for="exampleFormControlTextarea1"> Descriptions of Title
+                                        </label>
+                                        <textarea class="form-control rounded-0" id="exampleFormControlTextarea1"
+                                            rows="10"></textarea>
+                                    </div>
+
                                 </form>
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Save changes</button>
+                                <button type="submit" class="btn btn-secondary" data-dismiss="modal"
+                                    id="closepopup">Close</button>
+                                <button type="submit" class="btn btn-primary" id="savedescription"
+                                    onclick="saveData()">Save changes</button>
                             </div>
                         </div>
                     </div>
                 </div>
-
-
 
 
 
@@ -82,23 +82,16 @@
 
 
 
-            <div class="row">
-                <div class="col-lg-6 mx-auto">
 
-                    <!-- CUSTOM BLOCKQUOTE -->
-                    <blockquote class="blockquote blockquote-custom bg-white p-5 shadow rounded">
-                        <div class="blockquote-custom-icon bg-info shadow-sm">
-                            <i class="fa fa-quote-left text-white"></i>
-                        </div>
-                        <p class="mb-0 mt-2 font-italic">"Boardssss" <a href="#" class="text-info"></a></p>
-                        <footer class="blockquote-footer pt-4 mt-4 border-top">Someone famous in
-                            <cite title="Source Title">Source Title</cite>
-                        </footer>
-                    </blockquote><!-- END -->
 
+            <div id="my-new-board"></div>
+            <!-- <div class="card col-3" style="width: 18rem;">
+                <div class="card-body">
+                <h5 class="card-title">${e.title}</h5>
+                <p class="card-text">${e.description}</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
-            </div>
-
+                </div> -->
 
         </div>
     </section>
